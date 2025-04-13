@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azure File Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Upload a File to Azure Blob Storage</h1>
+
+    <label for="sasInput">Paste your container SAS URL:</label>
+    <input type="text" id="sasInput" placeholder="https://<account>.blob.core.windows.net/<container>?<SASToken>">
+    <br>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload</button>
+    <p id="status"></p>
+    <p id="containerurl"></p>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>
