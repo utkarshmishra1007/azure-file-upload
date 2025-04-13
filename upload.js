@@ -14,10 +14,6 @@ async function uploadFile() {
     return;
   }
 
-//const containerSasUrl = "https://azcopytestforinterview.blob.core.windows.net/myprod?sp=racwdlmeop&st=2025-04-11T20:45:00Z&se=2025-04-30T04:45:00Z&sip=103.18.87.241&spr=https&sv=2024-11-04&sr=c&sig=oHunbCGBLe%2BZKQNz4HZlXFapRmhGg8ZXsrIkYhsTXUA%3D";
-
-
-
 // Split base and SAS token
 const [baseUrl, sasToken] = containerSasUrl.split("?");
 
