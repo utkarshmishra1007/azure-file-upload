@@ -14,18 +14,18 @@ Create an Storage account and a container in it.
 (Optional) Configure and enable the SFTP access for that container if required. This will require soft delete to be disabled for containers and blobs.
 
 Generate a SAS token URL for the container with write access. This will be required while uploading the file through webapp.
-    Format(https://<account>.blob.core.windows.net/<container>?<SASToken>)
+    Format(`https://<account>.blob.core.windows.net/<container>?<SASToken>`)
 
 Configure CORS on Storage account.
     Go to your Storage Account in Azure → Settings > Resource sharing (CORS) → Add the following:
-    Allowed origins: * (or your web app's URL like https://yourapp.azurewebsites.net)
+    Allowed origins: * (or your web app's URL like `https://yourapp.azurewebsites.net`)
     Allowed methods: PUT, OPTIONS
     Allowed headers: *
     Exposed headers: *
     Max age: 3600
 
 Create an Azure App service and configure the Web app on Azure.
-URL to access ZIP deploy kudu+ host https://<app_name>.scm.azurewebsites.net/ZipDeployUI
+URL to access ZIP deploy kudu+ host `https://<app_name>.scm.azurewebsites.net/ZipDeployUI`
 
 ![snip7](https://github.com/user-attachments/assets/20883b2c-c8eb-4186-bd9d-9c40adeaee95)
 
